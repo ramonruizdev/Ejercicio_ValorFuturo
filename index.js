@@ -54,3 +54,22 @@ function calcularIP() {
 }
 
 ip_btn.addEventListener("click", calcularIP);
+
+// Número de periodos
+
+let np_r = document.getElementById("np_resultado"); // Número de periodos Resultado
+let np_vf = document.getElementById("np_vf"); // Valor Futuro
+let np_vp = document.getElementById("np_vp"); //Valor Presente
+let np_i = document.getElementById("np_i"); //Interés del periodo
+
+let np_btn = document.getElementById("np_btn");
+
+function calcularNP() {
+  let vf_val = parseFloat(np_vf.value);
+  let vp_val = parseFloat(np_vp.value);
+  let i_val = parseFloat(np_i.value);
+  let np_val = [[vf_val / vp_val] - 1] / i_val;
+  np_r.innerHTML = `Número de Periodos = ${np_val.toFixed(2)}`;
+}
+
+np_btn.addEventListener("click", calcularNP);
