@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  background-color: #d8e9a8;
+}
+
+.header {
+  padding: 2rem 0;
+  box-shadow: 1px 1px 10px #191a19;
+}
+.header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #1e5128;
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 1024px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.operations {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 1px 1px 10px #191a19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.operations h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 1rem 0;
+  align-self: center;
+  color: #4e9f3d;
+}
+
+.operations input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 1px 1px 3px #191a19;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.operations label {
+  font-size: 1.2em;
+  color: #191a19;
+}
+
+.operations__button {
+  background: #1e5128;
+  color: #d8e9a8;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.operations__button:hover {
+  background: #4e9f3d;
+  color: #d8e9a8;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 1px 1px 8px #191a19;
+  transition: 0.5s;
+}
+
+
+@media screen and (max-width: 750px) {
+  .main {
+    grid-template-columns: auto;
+  }
+}
+    
+}
