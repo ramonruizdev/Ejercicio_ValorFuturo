@@ -49,7 +49,7 @@ function calcularIP() {
   let vf_val = parseFloat(ip_vf.value);
   let vp_val = parseFloat(ip_vp.value);
   let n_val = parseFloat(ip_n.value);
-  let ip_val = [[vf_val / vp_val] - 1] / n_val;
+  let ip_val = Math.pow(vf_val / vp_val, 1 / n_val) - 1;
   ip_r.innerHTML = `Valor Presente = ${ip_val.toFixed(2)}`;
 }
 
@@ -68,7 +68,7 @@ function calcularNP() {
   let vf_val = parseFloat(np_vf.value);
   let vp_val = parseFloat(np_vp.value);
   let i_val = parseFloat(np_i.value);
-  let np_val = [[vf_val / vp_val] - 1] / i_val;
+  let np_val = Math.log(vf_val / vp_val) / Math.log(1 + i_val);
   np_r.innerHTML = `Número de Periodos = ${np_val.toFixed(2)}`;
 }
 
