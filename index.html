@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Valor Futuro</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio - Valor Futuro</h1>
+    </header>
+    <div>
+        <h2>Calcular El Valor Futuro</h2>
+
+        <label for="vf_vp">Ingrese El Valor Presente</label>
+        <input type="number" id="vf_vp">
+
+        <label for="vf_i">Ingrese El Interés Del Periodo</label>
+        <input type="number" id="vf_i">
+
+        <label for="vf_n">Ingrese El Número de periodos</label>
+        <input type="number" id="vf_n">
+
+        <input type="button" id="vf_btn" value="Calcular Valor Futuro">
+
+        <p id="vf_resultado"></p>
+    </div>
+
+    <div>
+        <h2>Calcular El Valor Presente</h2>
+    
+        <label for="vp_vf">Ingrese El Valor Futuro</label>
+        <input type="number" id="vp_vf">
+    
+        <label for="vp_i">Ingrese El Interés Del Periodo</label>
+        <input type="number" id="vp_i">
+    
+        <label for="vp_n">Ingrese El Número de periodos</label>
+        <input type="number" id="vp_n">
+    
+        <input type="button" id="vp_btn" value="Calcular Valor Presente">
+    
+        <p id="vp_resultado"></p>
+    </div>
+
+    <div>
+        <h2>Calcular Interés Del Periodo</h2>
+        
+        <label for="ip_vf">Ingrese El Valor Futuro</label>
+        <input type="number" id="ip_vf">
+
+        <label for="ip_vp">Ingrese El Valor Presente</label>
+        <input type="number" id="ip_vp">
+
+        <label for="ip_n">Ingrese El Número de periodos</label>
+        <input type="number" id="ip_n">
+
+        <input type="button" id="ip_btn" value="Calcular El Interés Del Periodo">
+
+        <p id="ip_resultado"></p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
