@@ -33,6 +33,10 @@ Usa algebra para despejar la fórmula y que igual puedas obtener calquiera de lo
 
 - n = Log(VF / VP) / Log(1 + i)
 
+## Resolución en código
+https://ramonruizdev.github.io/Ejercicio_ValorFuturo/
+
+
 ## Bonus
 
 Investiga que es el interés convertido nominal y aplícalo en tu fórmula.
